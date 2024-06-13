@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ListaTarefa {
     //atributo
-    private List<Tarefa> tarefaList;
+    private final List<Tarefa> tarefaList;
 
     public ListaTarefa() {
         this.tarefaList = new ArrayList<>();
@@ -25,10 +25,12 @@ public class ListaTarefa {
         tarefaList.removeAll(tarefasParaRemover);
     }
     public int obterNumeroTotalTarefa() {
-       return tarefaList.size();
+
+        return tarefaList.size();
     }
 
     public void obterDescricaoTarefa() {
+
         System.out.println(tarefaList);
     }
 }
